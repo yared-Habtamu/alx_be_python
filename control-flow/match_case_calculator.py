@@ -10,7 +10,7 @@ elif operation == '-':
 elif operation == '*':
     result = num1 * num2
     print(f"The result is {result}.")
-if operation == '/':
+elif operation == '/':
     result = num1 / num2
     if num2 != 0:
         print(f"The result is {result}.")
