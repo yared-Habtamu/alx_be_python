@@ -1,12 +1,14 @@
-from . import main
-def perform_operation(num1,num2,operation):
+def perform_operation(num1, num2, operation):
     if operation == 'add':
-        return num1+num2
-    elif operation == 'substract':
-        return num1-num2
+        return num1 + num2
+    elif operation == 'subtract':
+        return num1 - num2
     elif operation == 'multiply':
-        return num1*num2
+        return num1 * num2
+    elif operation == 'divide':
+        if num2 == 0:
+            return "Error: Division by zero"
+        else:
+            return num1 / num2
     else:
-        if num2 != 0:
-            return num1/num2
-        return "You can't divide a number by 0"
+        return "Error: Invalid operation"
