@@ -11,6 +11,5 @@ class BankAccount:
         self.account_balance-=amount
         return True
 
-    def display_balance(amount):
-        return f"Current Balance: ${self.account_balance}"
-
+    def display_balance(account_balance):
+        return f"Current Balance: ${account_balance}"
