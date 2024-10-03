@@ -1,0 +1,12 @@
+import unittest
+from simple_calculator import SimpleCalculator
+
+class TestSimpleCalculator(unittest.TestCase):
+    def setUp(self):
+        self.calc=SimpleCalculator()
+
+    def test_addition(self):
+        self.assertEqual(self.calc.add(10,5),15)
+        self.assertEqual(self.calc.add(-1,1),0)
+        self.assertEqual(self.calc.add(0,0),0)
+        self.assertEqual(self.calc.add(-1,-1),-2)
