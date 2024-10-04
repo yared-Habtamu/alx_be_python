@@ -14,3 +14,12 @@ class TestSimpleCalculator(unittest.TestCase):
     def test_subtraction(self):
         self.assertNotEqual(self.calc.subtract(1,-1),1)
         self.assertEqual(self.calc.subtract(10,10),0)
+
+    def test_multiplication(self):
+        self.assertEqual(self.calc.multiply(1,0),0)
+        self.assertEqual(self.calc.multiply(1000,1000),1000000)
+
+    def test_divide(self,a,b):
+        self.assertIsNotNone(self.calc.divide(1,0))
+        self.assertEqual(self.calc.divide(10,2),5)
+
