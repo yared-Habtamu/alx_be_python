@@ -19,3 +19,5 @@ class Library:
         if self.book.title in self.__books:
             return self.book.is_checked()
         return not self.book.is_checked()
+    
+    def return_book(self,title):
