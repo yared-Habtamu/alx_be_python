@@ -4,7 +4,7 @@ class Book:
         self.author=author
         self.__is_checked_out=True
 
-     def is_checked(self):
+     def return_book(self):
         return self.__is_checked_out
 
 class Library:
